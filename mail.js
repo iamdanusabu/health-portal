@@ -1,25 +1,4 @@
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
-
-
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  const firebaseConfig = {
-    apiKey: "AIzaSyDcTyFqdWZMP7qNgrnYqcYZ2OIXMMHBG7g",
-    authDomain: "upload-e8fed.firebaseapp.com",
-    databaseURL: "https://upload-e8fed-default-rtdb.firebaseio.com",
-    projectId: "upload-e8fed",
-    storageBucket: "upload-e8fed.appspot.com",
-    messagingSenderId: "58607096448",
-    appId: "1:58607096448:web:1e38896d507d5cf0588c65",
-    measurementId: "G-NCHGTERL30"
-  };
-
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
-
-// Reference your database
-var contactFormDB = firebase.database().ref("contactForm");
+  var contactFormDB = firebase.database().ref("contactForm");
 
 document.getElementById("contactForm").addEventListener("submit", submitForm);
 
