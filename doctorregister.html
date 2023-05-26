@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register for Doctors</title>
+    <link rel="stylesheet" href="uploadstyles.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="doctorlogin.html">Login</a></li>
+        </ul>
+      </nav>
+      
+    <div class="container">
+        <form action="" id="contactForm">
+            <div class="alert">Your message sent</div>
+
+            <div class="inputBox">
+                <input type="text" id="name" placeholder="Your name...." />
+            </div>
+
+            <div class="inputBox">
+                <input type="email" id="emailid" placeholder="Your Email....." />
+            </div>
+            <div class="inputBox">
+                <input type="text" id="phone" placeholder="Enter your Phone" />
+            </div>
+
+            <div class="inputBox">
+                <textarea class="messageContent" id="msgContent" cols="30" rows="10" placeholder="Message"></textarea>
+            </div>  
+            <div class="file">
+                <p class="label">Please Upload your Valid Document- Liable for Manual Checking-filename should be yourname+extension of file</p>
+                <input type="file" id="fileButton" name="fileButton">
+            </div>
+            <div class="inputBox">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script type="module" src="mail.js"></script>
+</body>
+
+</html>
